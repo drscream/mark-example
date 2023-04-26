@@ -1,6 +1,6 @@
 name: Docs Test and Publish
 
-on: pull_request
+on: push
 
 jobs:
   helm-suite:
