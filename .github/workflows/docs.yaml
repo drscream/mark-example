@@ -15,7 +15,7 @@ jobs:
       uses: draios/infra-action-mark2confluence@main
       with:
         action: "dry-test"
-        BASE_URL: https://core-io.atlassian.net
+        CONFLUENCE_BASE_URL: https://core-io.atlassian.net
         DOC_DIR_PATTERN: ".*"
         DOC_DIR: docs
         CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
@@ -25,7 +25,7 @@ jobs:
       uses: draios/infra-action-mark2confluence@main
       with:
         action: "publish"
-        BASE_URL: https://core-io.atlassian.net
+        CONFLUENCE_BASE_URL: https://core-io.atlassian.net
         DOC_DIR_PATTERN: ".*"
         DOC_DIR: docs
         CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
