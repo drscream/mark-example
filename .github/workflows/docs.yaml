@@ -22,7 +22,7 @@ jobs:
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
 
     - name: Publish Docs
-      uses: draios/infra-ghaction-mark2confluence@main
+      uses: draios/infra-action-mark2confluence@main
       with:
         action: "publish"
         BASE_URL: https://core-io.atlassian.net
