@@ -18,6 +18,7 @@ jobs:
         CONFLUENCE_BASE_URL: https://core-io.atlassian.net/wiki
         DOC_DIR_PATTERN: ".*"
         DOC_DIR: docs
+        CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
 
     - name: Publish Docs
@@ -27,4 +28,5 @@ jobs:
         CONFLUENCE_BASE_URL: https://core-io.atlassian.net/wiki
         DOC_DIR_PATTERN: ".*"
         DOC_DIR: docs
+        CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
