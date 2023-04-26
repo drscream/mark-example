@@ -1,6 +1,5 @@
 <!-- Space: MFS -->
-<!-- Parent: Automation -->
-<!-- Title: Sync Markdown to Confluence -->
+<!-- Title: Example -->
 
 # this is a test
 
