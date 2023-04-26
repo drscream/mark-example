@@ -12,11 +12,12 @@ jobs:
     #   run:
 
     - name: Test Docs generation
-      uses: draios/infra-ghaction-mark2confluence@main
+      uses: draios/infra-action-mark2confluence@main
       with:
-        action: "test"
-      env:
+        action: "dry-test"
         BASE_URL: https://core-io.atlassian.net
+        DOC_DIR_PATTERN: ".*"
+        DOC_DIR: docs
         CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
 
@@ -24,7 +25,8 @@ jobs:
       uses: draios/infra-ghaction-mark2confluence@main
       with:
         action: "publish"
-      env:
         BASE_URL: https://core-io.atlassian.net
+        DOC_DIR_PATTERN: ".*"
+        DOC_DIR: docs
         CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
