@@ -20,6 +20,7 @@ jobs:
         DOC_DIR: docs
         CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
+        HEADER_TEMPLATE: ""
 
     - name: Publish Docs
       uses: drscream/infra-action-mark2confluence@main
@@ -30,3 +31,4 @@ jobs:
         DOC_DIR: docs
         CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
+        HEADER_TEMPLATE: ""
