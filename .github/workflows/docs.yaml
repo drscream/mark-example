@@ -12,7 +12,7 @@ jobs:
     #   run:
 
     - name: Test Docs generation
-      uses: draios/infra-action-mark2confluence@main
+      uses: drscream/infra-action-mark2confluence@main
       with:
         action: "dry-test"
         CONFLUENCE_BASE_URL: https://core-io.atlassian.net/wiki
@@ -22,7 +22,7 @@ jobs:
         CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
 
     - name: Publish Docs
-      uses: draios/infra-action-mark2confluence@main
+      uses: drscream/infra-action-mark2confluence@main
       with:
         action: "publish"
         CONFLUENCE_BASE_URL: https://core-io.atlassian.net/wiki
