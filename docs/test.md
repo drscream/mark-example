@@ -1,14 +1,16 @@
 <!-- Space: MFS -->
 <!-- Title: Example -->
 
-# this is a test
+This page provide an awesome example how to create a documentation in Markdown for Confluence.
 
-## bla
+This is an awesome headline
+===========================
 
+Some code:
+
+```bash
+#!/usr/bin/env bash
+
+echo "Hello"
+exit 0
 ```
-code
-```
-
-More test
-
-What's going on here! :-)
